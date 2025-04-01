@@ -1,4 +1,4 @@
-export default function Footer({handleToggalModal, data}) {
+export default function Footer({handleToggleModal, data}) {
    
     return (
         <footer>
@@ -7,7 +7,7 @@ export default function Footer({handleToggalModal, data}) {
                 <h2>{data.title}</h2>
                 <h1>APOD PROJECT</h1>
             </div>
-            <button onClick={handleToggalModal}>
+            <button onClick={handleToggleModal}>
                 <i className="fa-solid fa-circle-info"></i>
             </button>
         </footer>

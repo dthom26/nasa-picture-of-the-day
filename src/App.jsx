@@ -39,7 +39,7 @@ function App() {
     fetchAPIData()
   }, [])
 
- function handleToggalModal() {
+ function handleToggleModal() {
     setShowModal((prev) => !prev)
   }
 
@@ -50,8 +50,8 @@ function App() {
           <i className="fa-solid fa-gear"></i>
         </div>
         }
-      {showModal && ( <SideBar data={data} handleToggalModal={handleToggalModal} />)}
-      {data && (<Footer data={data} handleToggalModal={handleToggalModal}/>)}
+      {showModal && ( <SideBar data={data} handleToggleModal={handleToggleModal} />)}
+      {data && (<Footer data={data} handleToggleModal={handleToggleModal}/>)}
     </>
   )
 }
